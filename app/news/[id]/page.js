@@ -125,4 +125,18 @@ export default async function NewsDetailPage({ params }) {
             </div>
             <div className="space-y-3">
               {relatedNews.map((item) => (
-                <Link key={item.id} href={`/news/${item.id}`}
+                <Link key={item.id} href={`/news/${item.id}`} className="block p-3 hover:bg-yellow-50 rounded-md border-b border-gray-50 transition-colors">
+                  <div className="flex items-start gap-2">
+                    <span className="text-gray-400 mt-1">❯</span>
+                    <span className="text-gray-700 hover:text-blue-600 font-medium">{item.title}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  );
+}
