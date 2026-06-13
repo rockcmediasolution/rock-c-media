@@ -1,4 +1,5 @@
 export const dynamic = 'force-dynamic';
+import Papa from 'papaparse';
 const CSV_URL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vRT5k044uUWzTbjZgbtRph62shMAJXpHuxp4vAQn0IAr88Hp5R0h0ZWdBYHvcuiH-bgN5hkrEAQswiB/pub?output=csv`;
 
 // युट्युब लिङ्कबाट भिडियोको ID पत्ता लगाउने फङ्सन
